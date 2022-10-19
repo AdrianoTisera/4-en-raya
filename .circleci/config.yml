@@ -3,6 +3,8 @@ jobs:
   build:
     docker:
       - image: cimg/python:3.10.1
+    environment:
+      PYTHONPATH=./src
     steps:
       - checkout
       - run:
